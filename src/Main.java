@@ -35,7 +35,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int choice = 1;
 
-        while (choice != 0) {
             // Instantiate Variables
             studentList = new ArrayList<Student>();
             randomizedList = new ArrayList<Student>();
@@ -60,6 +59,7 @@ public class Main {
                 pairs.add(pair);
             }
 
+        while (choice != 0) {
             ArrayList<StudentPair> alphabet = alphabetize(pairs, choice);
 
             int length = longestLength(alphabet);
